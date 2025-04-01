@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Diamond</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background: #f8f8f8;
+    }
+    h2 {
+      background: #d62828;
+      color: white;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+    .item {
+      background: white;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .name {
+      font-weight: bold;
+    }
+    .id-name {
+      color: #555;
+    }
+    .price {
+      margin: 0.5rem 0;
+    }
+    input[type='number'] {
+      width: 60px;
+      padding: 0.3rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .category {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Menu Diamond</h1>
+  <div class="category">
+    <h2>Appetizer</h2>
+    <div class="item">
+      <div class="name">Hot hors d'oeuvres four / five seasons</div>
+      <div class="id-name">Hidangan Pembuka Empat / Lima Rasa</div>
+      <div class="price">Rp 480.000</div>
+      <label>Qty: <input type="number" min="0"></label>
+    </div>
+    <div class="item">
+      <div class="name">Jelly fish with shredded chicken</div>
+      <div class="id-name">Ubur-ubur dengan Ayam Suwir</div>
+      <div class="price">Rp 288.000</div>
+      <label>Qty: <input type="number" min="0"></label>
+    </div>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(reg => console.log('Service worker registered.', reg));
+      });
+    }
+  </script>
+</body>
+</html>
