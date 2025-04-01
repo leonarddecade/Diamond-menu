@@ -16,5 +16,33 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "dir": "ltr",
+  "lang": "id-ID",
+  "orientation": "portrait",
+  "description": "Menu digital restoran Diamond, lengkap dengan terjemahan dan input jumlah pesanan.",
+  "id": "/",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "type": "image/png",
+      "sizes": "640x480"
+    },
+    {
+      "src": "screenshot2.png",
+      "type": "image/png",
+      "sizes": "640x480"
+    }
+  ],
+  "categories": [
+    "food",
+    "restaurant",
+    "menu",
+    "ordering"
+  ],
+  "launch_handler": {
+    "client_mode": "auto"
+  },
+  "iarc_rating_id": "e1234567890"
 }
